@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="/intro/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/intro/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/intro/img/favicon-16x16.png">
+    <title>MLP</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/intro/css/common/common.css">
+    <link rel="stylesheet" href="/intro/css/intro/intro.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script>
+        
+         function getCookie(name) {
+            var nameOfCookie = name + "=";
+            var x = 0;
+            while (x <= document.cookie.length) {
+            var y = (x + nameOfCookie.length);
+            if (document.cookie.substring(x, y) == nameOfCookie) {
+                var endOfCookie = document.cookie.indexOf(";", y)
+                if (endOfCookie == -1)
+                endOfCookie = document.cookie.length;
+                return unescape(document.cookie.substring(y, endOfCookie));
+            }
+            x = document.cookie.indexOf(" ", x) + 1;
+            if (x == 0)
+                break;
+            }
+            return "";
+        }      
+
+    </script>
+</head>
+
+<body>
+
+    <div id="intro">
+
+        <header id="header" class="" >
+            <section>
+                <h1>
+                    <img class="mlp" src="https://solution-mlp-seoul.s3.ap-northeast-2.amazonaws.com/image/icon/icon_mlp_v.png" alt="mlp">    
+                </h1>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="javascript:;" id="login">로그인</a>
+                        </li>
+                        <li>
+                            <a href="mailto:batteryho@nexon.co.kr">CONTACT</a>                            
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </header>
+
+        <div class="background">
+            <!-- 메인백그라운드 -->
+        </div>
+
+        <div class="tbl theme">
+            <div class="sub">
+                테마
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <span>#CNN</span>
+                    </li>
+                    <li>
+                        <span>#CLASSFICATION</span>
+                    </li>
+                    <li>
+                        <span>#NLP</span>
+                    </li>
+                    <li>
+                        <span>#AI</span>
+                    </li>
+                    <li>
+                        <span>#RNN</span>
+                    </li>
+                    <li>
+                        <span>#ML</span>
+                    </li>
+                    <li>
+                        <span>#DEEPLEARNING</span>
+                    </li>
+                    <li>
+                        <span>#TIMESERIES</span>
+                    </li>
+                    <li>
+                        <span>#ABNORBALITY DETECTION</span>
+                    </li>
+                    <li>
+                        <span>#SIMULATION</span>
+                    </li>
+                    <li>
+                        <span>#RECOMMENDATION</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tbl service">
+            <div class="sub">
+                서비스
+            </div>
+            <div>
+                <ul>
+                    <li id="sawh">
+                        <img src="https://solution-mlp-seoul.s3.ap-northeast-2.amazonaws.com/image/icon/icon_wallhack.jpg" alt="sawh">
+                        <div>
+                            <strong>SA월핵탐지</strong>
+                            이미지를 탐지하여<br/>
+                            월핵을 잡아냅니다.
+                        </div>
+                    </li>
+                    <li id="hrml">
+                        <img src="https://solution-mlp-seoul.s3.ap-northeast-2.amazonaws.com/image/icon/icon_cv.png" alt="hrml">
+                        <div>
+                            <strong>HRML</strong>
+                            자기소개서를 분석하여<br/>
+                            인사프로세스의 도움을 드립니다.
+                        </div>           
+                    </li>
+                    <li id="tmi">
+                        <img src="https://solution-mlp-seoul.s3.ap-northeast-2.amazonaws.com/image/icon/icon_tmi.png" alt="tmi">
+                        <div>
+                            <strong>TMI</strong>
+                            플레이데이터를 모아<br/>
+                            재미있는 인사이트를<br/>
+                            제공합니다.
+                        </div>           
+                    </li>
+                    <li id="maple">
+                        <img src="https://solution-mlp-seoul.s3.ap-northeast-2.amazonaws.com/image/icon/icon_maple.png" alt="maple">
+                        <div>
+                            <strong>메이플추천</strong>
+                            머신러닝기반으로<br/>
+                            메이플 스토리 직업을<br/>
+                            추천해드립니다.
+                        </div>           
+                    </li>
+                    <li id="cloud">
+                        <img src="https://solution-mlp-seoul.s3.ap-northeast-2.amazonaws.com/image/icon/icon_cloud.png" alt="cloud">
+                        <div>
+                            <strong>뭉게뭉게</strong>
+                            머신러닝기반으로<br/>
+                            이미지리소스를<br/>
+                            Variation 합니다.
+                        </div>           
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tbl service">
+            <div class="sub">
+                MLOPS
+            </div>
+            <div>
+                <ul>
+                    <li id="jupyter">
+                        <img src="https://solution-mlp-seoul.s3.ap-northeast-2.amazonaws.com/image/icon/icon_jupyter.png" alt="jupyter">
+                        <div>
+                            <strong>Jupyter</strong>
+                            머신러닝파트의<br/>
+                            공용주피터를 제공<br/>
+                            for Data science
+                        </div>
+                    </li>
+                    <li id="nxflow">
+                        <img src="https://solution-mlp-seoul.s3.ap-northeast-2.amazonaws.com/image/icon/icon_nxflow.png" alt="jupyter">
+                        <div>
+                            <strong>NxFlow</strong>
+                            AWS EKS를 활용한<br/>
+                            머신러닝 파이프라인
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="tbl news">
+            <div class="sub">
+                소식
+            </div>
+            <div>
+                <table>
+                    <tbody id="news">
+                        <tr>
+                            <td>
+                                <a href='javascript:;' target='_blank'>외부 사람은 보실 수 없습니다.</a>
+                                <span class="new">
+                                    New
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="tbl member">
+            <div class="sub">
+                멤버
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <img src="/intro/img/member/23517.jpg" alt="월핵">
+                        <div>
+                            <strong>전지호</strong>
+                            Web Programmer
+                        </div>           
+                    </li>
+                    <li>
+                        <img src="/intro/img/member/16706.jpg" alt="월핵">
+                        <div>
+                            <strong>권**</strong>
+                            AI Engineer
+                        </div>
+                    </li>
+                    <li>
+                        <img src="/intro/img/member/19059.jpg" alt="월핵">
+                        <div>
+                            <strong>황**</strong>
+                            AI Engineer
+                        </div>           
+                    </li>
+                    <li>
+                        <img src="/intro/img/member/23458.jpg" alt="월핵">
+                        <div>
+                            <strong>김**</strong>
+                            Analyst
+                        </div>           
+                    </li>
+                    <li>
+                        <img src="/intro/img/member/23303.jpg" alt="월핵">
+                        <div>
+                            <strong>안**</strong>
+                            Analyst
+                        </div>
+                    </li>
+                    <li>
+                        <img src="/intro/img/member/23715.jpg" alt="월핵">
+                        <div>
+                            <strong>최**</strong>
+                            AI Engineer
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+
+        <footer>
+            <div class="align">                
+                <address>
+                    <p>인텔리전스랩스 - 머신러닝파트</p>
+                    전자우편주소 : batteryho@nexon.co.kr<br/>
+                    Copyright MLP. All rights reserved.
+                </address>
+            </div>    
+        </footer>
+
+    </div>
+
+    <script>
+        var host = ""
+
+        function headerMove() {
+            if(window.scrollY < 400) {
+                $("#header").removeClass("blue")
+            }else{
+                $("#header").addClass("blue")
+            }
+        }
+
+        function headerMove2() {
+            if(window.scrollY < 40) {
+                $( "#header" ).css('margin-top',"" + (40 - window.scrollY) + "px");
+            }else{
+                $( "#header" ).css('margin-top',"0px");
+            }
+        }
+
+        //$( "#header" ).css('margin-top',"" + (40 - window.scrollY) + "px");
+
+        $(function() {
+
+            //뉴스가져오기
+            // $.get("/common/apis/news", function(data){
+            //     if(data.result){                    
+            //         var tags = "";
+            //         $("#news").empty();
+            //         data.news.reverse().forEach((el, idx) => {
+            //             if(idx == 0)
+            //                 tags += "<tr>\
+            //                             <td>\
+            //                                 <a href='https://solution-mlp-seoul.s3.ap-northeast-2.amazonaws.com/" + el + "' target='_blank'>" + el.replace("news/","") + "</a>\
+            //                                 <span class=\"new\">\
+            //                                     New\
+            //                                 </span>\
+            //                             </td>\
+            //                         </tr>"
+            //             else
+            //                 tags += "<tr>\
+            //                             <td>\
+            //                                 <a href='https://solution-mlp-seoul.s3.ap-northeast-2.amazonaws.com/" + el + "' target='_blank'>" + el.replace("news/","") + "</a>\
+            //                             </td>\
+            //                         </tr>"
+            //         });
+            //         $("#news").append(tags);
+            //     }
+            // });
+            
+            //로그인글씨
+            var auth = getCookie('authorization')
+            if(auth != "" && auth != null && typeof auth != "undefined")
+            {   
+                $("#login").html("로그아웃")                
+            }else{
+                $("#login").html("로그인")
+            }
+
+            //네비게이터
+            $("#login").on('click', function() {
+                alert("외부 인력은 접근 하실 수 없습니다.")
+            });
+            $("#sawh").on('click', function() {
+                alert("외부 인력은 접근 하실 수 없습니다.")
+            });
+            $("#hrml").on('click', function() {
+                alert("외부 인력은 접근 하실 수 없습니다.")
+            });
+            $("#tmi").on('click', function() {
+                alert("외부 인력은 접근 하실 수 없습니다.")
+            });
+            $("#maple").on('click', function() {
+                alert("외부 인력은 접근 하실 수 없습니다.")
+            });
+            $("#cloud").on('click', function() {
+                alert("외부 인력은 접근 하실 수 없습니다.")
+            });
+            $("#jupyter").on('click', function() {
+                alert("외부 인력은 접근 하실 수 없습니다.")
+            });
+            $("#nxflow").on('click', function() {
+                alert("외부 인력은 접근 하실 수 없습니다.")
+            });   
+           
+            //헤더
+            window.addEventListener('scroll', headerMove);
+
+        });
+
+    </script>
+
+</body>
+
+</html>
